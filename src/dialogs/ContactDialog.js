@@ -4,6 +4,10 @@ function ContactDialog(props) {
   console.log("pi" + JSON.stringify(props));
   function handleSubmit(e) {
     e.preventDefault();
+    if (!e.target[0].value || !e.target[1].value) {
+      alert("Please fill out all fields");
+      return;
+    }
     props.updateContactDetails({
       name: e.target[0].value,
       email: e.target[1].value,

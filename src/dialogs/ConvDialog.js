@@ -1,10 +1,13 @@
-import { Dialog, Text, Flex } from "@radix-ui/themes";
+import { Dialog, Text, Flex, Badge } from "@radix-ui/themes";
+import BadgeComponent from "../component/BadgeComponent";
 import { getTime } from "../utils";
 function ConvDialog(props) {
   return (
     <Dialog.Content maxWidth="450px">
       <Dialog.Title>Conversation</Dialog.Title>
-
+      <Flex justify="end">
+        <BadgeComponent status={props.status} />
+      </Flex>
       {props.messages.map((message) => (
         <Flex direction="column" className="bottom-padding">
           <Text as="div" gap="2" py="10" size="2" weight="bold">

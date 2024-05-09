@@ -5,14 +5,15 @@ import {
   Dialog,
   Card,
   Button,
-  Box,
+  Heading,
 } from "@radix-ui/themes";
 import ConvDialog from "../dialogs/ConvDialog";
 import { conversation } from "../data";
+import BadgeComponent from "../component/BadgeComponent";
 import { useEffect, useState } from "react";
 import { sortdata } from "../utils";
 
-import Headercomponent from "../HeaderComponent";
+import Headercomponent from "../component/HeaderComponent";
 function TableView() {
   const [conversationData, setConversationData] = useState(conversation);
 
@@ -25,7 +26,12 @@ function TableView() {
   };
   return (
     <Flex direction="column" gap="6">
-      <Headercomponent />
+      <Flex gap="2" justify="center" p="10px" size="100px" my="10px">
+        <Heading as="h1" size="9">
+          Conversation App
+        </Heading>
+      </Flex>
+      <Headercomponent page="home" key="Home" />
       <Flex justify="start">
         <Card>
           <Flex gap="20px" justify="start">
@@ -53,7 +59,7 @@ function TableView() {
                   <Table.Cell>{item.email}</Table.Cell>
                   <Table.Cell>{item.subject}</Table.Cell>
                   <Table.Cell>
-                    <Badge color="green">{item.status}</Badge>
+                    <BadgeComponent status={item.status} />
                   </Table.Cell>
                 </Table.Row>
               </Dialog.Trigger>

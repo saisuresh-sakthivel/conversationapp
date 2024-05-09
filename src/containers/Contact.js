@@ -1,4 +1,13 @@
-import { Card, Box, Flex, Text, Button, Dialog } from "@radix-ui/themes";
+import {
+  Card,
+  Box,
+  Heading,
+  Flex,
+  Text,
+  Button,
+  Dialog,
+} from "@radix-ui/themes";
+import Headercomponent from "../component/HeaderComponent";
 import { contacts } from "../data";
 import { useState } from "react";
 import ContactDialog from "../dialogs/ContactDialog";
@@ -17,6 +26,12 @@ function Contact() {
 
   return (
     <div>
+      <Flex gap="2" justify="center" p="10px" size="100px" my="10px">
+        <Heading as="h1" size="9">
+          Contact
+        </Heading>
+      </Flex>
+      <Headercomponent page="contact" key="Contact" />
       <Flex justify="end" p="20px">
         <Dialog.Root open={open} onOpenChange={setOpen}>
           <Dialog.Trigger>
