@@ -1,0 +1,11 @@
+.box:hover {
+  background-color: grey;
+  color: white; 
+  cursor: pointer;      
+}
+.bottom-padding{
+    padding-bottom: 10px;
+}
+.label{
+  padding: 5px;
+}
