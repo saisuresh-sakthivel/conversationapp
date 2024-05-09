@@ -1,3 +1,10 @@
+/**
+ * @file BadgeComponent.js
+ * @name BadgeComponent
+ * @fileoverview This file contains the BadgeComponent.
+ * This component is used to display the status of a conversation.
+ */
+
 import { Badge } from "@radix-ui/themes";
 function BadgeComponent(props) {
   const status = props.status.toLowerCase();

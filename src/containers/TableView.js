@@ -1,17 +1,16 @@
-import {
-  Table,
-  Badge,
-  Flex,
-  Dialog,
-  Card,
-  Button,
-  Heading,
-} from "@radix-ui/themes";
+/**
+ * @file TableView.js
+ * @name TableView
+ * @fileoverview This file contains the TableView component.
+ * This component displays the list of conversations.
+ * It uses the Headercomponent to render the header.
+ * It uses the ConvDialog component to display the dialog for a conversation.
+ */
+import { Table, Flex, Dialog, Card, Button, Heading } from "@radix-ui/themes";
 import ConvDialog from "../dialogs/ConvDialog";
 import { conversation } from "../data";
 import BadgeComponent from "../component/BadgeComponent";
-import { useEffect, useState } from "react";
-import { sortdata } from "../utils";
+import { useState } from "react";
 
 import Headercomponent from "../component/HeaderComponent";
 function TableView() {

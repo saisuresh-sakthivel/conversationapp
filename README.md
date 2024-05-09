@@ -2,6 +2,12 @@
 
 Web application to support customer service agents to address customer queries and contact them using the contact list.
 
+## Technology used
+
+Used [Radix](https://www.radix-ui.com/themes/docs/overview/getting-started) UI theme for building the layout and components.
+
+Used html [icons](https://symbl.cc/en/2709/) to add icon to contacts. The decision made to not use react-icons are any other library just to add one/two icons.
+
 ## Installation
 
 Use the npm package manager (npm) to install the application.

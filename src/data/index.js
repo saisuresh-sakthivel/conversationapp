@@ -1,3 +1,6 @@
+/**
+ * Data for the conversation and contacts
+ */
 let conversation = [
   {
     name: "John Doe",

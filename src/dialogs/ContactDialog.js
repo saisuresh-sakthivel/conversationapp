@@ -1,3 +1,8 @@
+/**
+ * Dialogs
+ * This component is used to add a new contact to the contact list.
+ * It contains a form with fields for name and email.
+ */
 import { Dialog, Text, Flex, Button } from "@radix-ui/themes";
 import { TextField } from "@radix-ui/themes";
 function ContactDialog(props) {

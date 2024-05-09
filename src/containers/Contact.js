@@ -1,3 +1,10 @@
+/**
+ * @file Contact.js is a container component that renders the Contact page.
+ * This component displays the list of contacts and provides an option to add a new contact.
+ * It uses the Headercomponent to render the header.
+ * It uses the ContactDialog component to display the dialog for adding a new contact.
+ * It uses the contacts data to display the list of contacts.
+ */
 import {
   Card,
   Box,
